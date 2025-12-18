@@ -10,9 +10,14 @@ const data=mysql.createconnection({
     database: "Personal_information(1)",
 
 });
+// a message will be print if the connection is workin or not 
 data.connect((err)=>{
-
-
-
+    //if there is any error with the database connection
+    if(err){
+console.error.apply("Error connection failed:" , err.message);
+return;
+}
+//if everything is working will print this
+console.log("Connection with database is working");
 
 })
