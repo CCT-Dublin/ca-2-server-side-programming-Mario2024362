@@ -8,8 +8,23 @@
 </head>
 
 <body>
-    <form id="dataform">
+    <!-- Submition form is created -->
+<form action="/submit" method ="post" onsubmit="return validateForm()">
+<!-- The data will be insert using these cells -->
+<input name="first_name" placeholder="First Name" required >
+ <input name="second_name" placeholder="Second Name" required />
+    <input name="email" placeholder="Email" required >
+    <input name="phone_number" placeholder="Phone Number" >
+    <input name="eircode" placeholder="Eircode" >
+    <!-- Submition button to insert all the data from the user -->
+    <button type="submit">Submit</button>
 
+
+
+
+
+
+</form>
 
 
 
