@@ -21,3 +21,7 @@ return;
 console.log("Connection with database is working");
 
 })
+//export the database connection
+MediaSourceHandle.exports={
+    data,
+}
