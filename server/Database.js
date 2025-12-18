@@ -10,3 +10,9 @@ const data=mysql.createconnection({
     database: "Personal_information(1)",
 
 });
+data.connect((err)=>{
+
+
+
+
+})
