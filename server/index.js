@@ -1,4 +1,14 @@
 
+
+function validateData(data) {
+  const name = /^[a-zA-Z0-9]{1,20}$/;
+  const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phone = /^[0-9]{10}$/;
+  const eircode = /^[0-9][a-zA-Z0-9]{5}$/;
+}
+
+
+
 const express = require("express");
 const path= require("path");
 
@@ -28,8 +38,14 @@ const record = {
         [record.first_name, record.second_name, record.email, record.phone_number, record.eircode],
         (err) => {
           if (err) console.error(`Database is not working${rowNumber}:`, err.message);
+       res.send("Data was sotrage in the database");
         }
+
+
+
       );
+
+    
 
 
 }
