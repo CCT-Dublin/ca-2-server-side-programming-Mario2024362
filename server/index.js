@@ -11,10 +11,11 @@ function validateData(data) {
 
 const express = require("express");
 const path= require("path");
+const{data} = require("/database");
 
 //Port to access and conect the form
 const app= express();
-const PORT=3000;
+
 
 //function to find the csv and print a message if this is not working
 function importCSV(csvFilePath) {
@@ -45,7 +46,7 @@ const record = {
 
       );
 
-    
+    module.exports={app, importCSV};
 
 
 }
