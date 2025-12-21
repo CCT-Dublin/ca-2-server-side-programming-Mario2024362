@@ -1,0 +1,32 @@
+/* Align the text in the center */
+h1 {
+  text-align: center; 
+  margin-top: 30px;
+  color: #691212;
+  /* Give color to the letter of the header */
+}
+/* Edit the body */
+body {
+  font-family: Arial, sans-serif;
+  background: #cdcece;
+  /* Provide color to the background */
+  margin: 0;
+  padding: 0;
+  /* Margin of the elements in the body  */
+}
+/* Center the cells in the form  */
+form {
+  width: 320px;
+  margin: 30px auto;
+}
+/* Edit the button puting and the center and prodviding color */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #222;
+  color: white;
+
+  border-radius: 6px;
+  
+}

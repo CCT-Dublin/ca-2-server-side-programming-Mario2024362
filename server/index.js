@@ -38,7 +38,7 @@ app.post("/submit", (req, res) => {
     return res.send("Invalid data and the page is not working");
   }
 
-  // Error message that will show if the database is working
+  // Error messaSge that will show if the database is working
   data.query(
     //This will insert the data into the query of the database
     "INSERT INTO mysql_table (first_name, second_name, email, phone_number, eircode) VALUES (?, ?, ?, ?, ?)",
